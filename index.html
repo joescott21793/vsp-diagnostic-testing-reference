@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VSP Diagnostic Testing Reference</title>
+<meta name="description" content="Look up a diagnosis or ICD-10 code and see VSP Essential Medical Eye Care coverage rules per diagnostic test.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>VSP Diagnostic Testing Reference</h1>
+  <p class="sub">Type a diagnosis or ICD-10 code to see coverage rules per test.<br>
+  <span class="src-line">VSP Essential Medical Eye Care (Provider Reference Manual), last updated Mar 30, 2026</span></p>
+</header>
+
+<main>
+  <div class="search-wrap">
+    <input id="q" type="search" placeholder="e.g. keratoconus, H40.003, proliferative DR…" autocomplete="off" aria-label="Diagnosis or ICD-10 code">
+    <button id="clear" aria-label="Clear search">✕</button>
+  </div>
+  <div class="chips" id="quick" aria-label="Quick searches"></div>
+  <div id="results" aria-live="polite"></div>
+</main>
+
+<footer>
+  <details>
+    <summary>Interpretation &amp; report — required for diagnostic tests</summary>
+    <p>For all diagnostic tests that require an interpretation and report, the medical record must include: clinical findings; interpretation of the findings, including comparative data referenced (when available); and the clinical management plan.</p>
+  </details>
+  <details>
+    <summary>Copays</summary>
+    <p>Copays, if required, apply to medical eye exams only (92002–92014, 99202–99205, 99211–99215, 99421–99423). Copays do not apply to non-exam services such as diagnostic testing, including fundus photography and OCT.</p>
+  </details>
+  <p class="disclaimer">Reference tool only. Coverage is per the Mar 2026 VSP Essential Medical Eye Care document; client-specific details may vary. Confirm eligibility on the VSP Patient Record Report before providing services.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
